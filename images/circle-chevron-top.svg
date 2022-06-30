@@ -1,0 +1,4 @@
+<svg id="circle-chevron-top" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <circle id="Ellipse_164" data-name="Ellipse 164" cx="15" cy="15" r="15" transform="translate(1 1)" fill="#fff"/>
+  <path id="circle-chevron-top-2" data-name="circle-chevron-top" d="M17,33A16,16,0,1,1,33,17,16,16,0,0,1,17,33Zm0-2.909A13.091,13.091,0,1,0,3.909,17,13.091,13.091,0,0,0,17,30.091Zm-4.79-9.153-2.057-2.057L17,12.034l6.847,6.847L21.79,20.938,17,16.148Z" transform="translate(-1 -1)" fill="#707070"/>
+</svg>

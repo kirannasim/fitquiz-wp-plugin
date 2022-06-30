@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="265" height="116" viewBox="0 0 265 116">
+  <defs>
+    <filter id="Blue_Ellipse" x="0" y="0" width="112" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#707070" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_130" x="0" y="4" width="112" height="112" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur-2"/>
+      <feFlood flood-color="#707070" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Well_done_message" data-name="Well done message" transform="translate(-871 -173.75)">
+    <g id="Well_done_Icon" data-name="Well done Icon">
+      <g transform="matrix(1, 0, 0, 1, 871, 173.75)" filter="url(#Blue_Ellipse)">
+        <circle id="Blue_Ellipse-2" data-name="Blue Ellipse" cx="32" cy="32" r="32" transform="translate(24 20)" fill="#1c7db1"/>
+      </g>
+      <g id="Check_Icon" data-name="Check Icon" transform="translate(906 204.75)">
+        <g transform="matrix(1, 0, 0, 1, -35, -31)" filter="url(#Ellipse_130)">
+          <circle id="Ellipse_130-2" data-name="Ellipse 130" cx="20" cy="20" r="20" transform="translate(36 32)" fill="#fefefe"/>
+        </g>
+        <path id="check-mark" d="M11.988,18.008,25,5l1.979,1.979L11.988,21.966,4,13.978,5.979,12Z" transform="translate(6 8)" fill="#155e85"/>
+      </g>
+    </g>
+    <text id="Well_done_" data-name="Well done!" transform="translate(979 236.75)" fill="#313636" font-size="32" font-family="SF Pro" font-weight="700"><tspan x="0" y="0">Well done!</tspan></text>
+  </g>
+</svg>

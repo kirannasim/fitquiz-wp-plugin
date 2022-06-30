@@ -1,0 +1,29 @@
+{
+  "name": "fitquiz-wp-plugin",
+  "version": "1.0.0",
+  "description": "custom wordpress plugin for fitsmallbusiness",
+  "main": "fitquiz.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/hdcrepos/fitquiz-wp-plugin"
+  },
+  "author": "Fitsmallbusiness",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/hdcrepos/fitquiz-wp-plugin/issues"
+  },
+  "homepage": "https://bitbucket.org/hdcrepos/fitquiz-wp-plugin#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.1",
+    "sass": "^1.38.0"
+  }
+}

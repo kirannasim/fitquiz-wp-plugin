@@ -1,0 +1,140 @@
+// Directly copied from fitquiz repo 2/9/22
+
+
+/* ---- feedback ---- */
+#quiz_6GJBtT47 {
+	#quiz_wrapper .col-quiz-full label.radio_label:hover, 
+	#quiz_wrapper .input div.checkbox label:hover, 
+	#quiz_wrapper .input div.checkbox-checked label {border-color:#FF5907;}
+
+	#quiz_wrapper .input div.checkbox-checked label {font-weight: 500 !important;}
+
+	.feedback__counter-wrapper { display: flex; justify-content: center; font-size: 12px; }
+  .feedback__counter { width: 100%; max-width: 340px; margin-top: 1.75rem; margin-bottom: 1.5rem; padding: 0 0.75rem; display: flex; align-items: center; justify-content: center; }
+  .feedback__counter-item { display: inline-flex; }
+  .feedback__counter-item--base { width: 80px; letter-spacing: 0.30px;}
+  .feedback__counter-item--base-l { margin-right: 0.5rem; justify-content: flex-end; }
+  .feedback__counter-item--base-r { margin-left: 0.5rem; justify-content: flex-start;}
+  .feedback__counter-item--progress-bar { width: 100px; height: 16px; margin: 0 !important; border: 1px solid #a6a4a4; border-radius: 10px; overflow: hidden; }
+	.feedback__counter-label { margin-right: 0.25rem; color: #6a6a6a; }
+	.feedback__counter-number.incorrect, .feedback-result__score-number.red { color: red; }
+	.feedback__counter-number.correct, .feedback-result__score-number.green { color: green; }
+	.feedback__progress-bar { display: inline-block; }
+	.feedback__progress-bar-incorrect { background-color: red; transition-property: width; transition: width 1s; width: 0%; border-radius: 8px;}
+	.feedback__progress-bar-correct { background-color: green; transition-property: width; transition: width 1s; width: 0%; border-radius: 8px;}
+
+	.feedback { display: none; }
+	.feedback p { font-size: 14px; font-weight: 400; }
+	.feedback.checked { display: block; width: 87%; margin: 1.25rem auto 0 6%; padding: 1.25rem; background-color: #ecf3ff; clear: both; border-radius: 6px;}
+	.feedback__header { display: flex; align-items: center; margin-bottom: 1rem;}
+	.feedback__title { display: inline-block;  font-size: 20px; font-weight: 700; margin: 0 0 0 0.5rem; }
+	.feedback__icon { display: inline-block; width: 24px; height: 24px; }
+	.feedback__icon img { width: 100%; height: auto;}
+
+
+
+	#quiz_wrapper .col-quiz-full label.feedback__radio_label--correct:hover, #quiz_wrapper .col-quiz-full label.feedback__radio_label--incorrect:hover, #quiz_wrapper .input div.checkbox > label.feedback__radio_label--correct, #quiz_wrapper .input div.checkbox > label.feedback__radio_label--incorrect, #quiz_wrapper .col-quiz-full label.feedback__radio_label--incorrect, #quiz_wrapper .col-quiz-full label.feedback__radio_label--correct { font-weight: 700 !important; }
+
+	#quiz_wrapper .col-quiz-full label .feedback__radio_label--correct:hover, .feedback__radio_label--incorrect:hover { font-weight: 700 !important; }
+	#quiz_wrapper .col-quiz-full label.feedback__radio_label--correct { border: 3px solid green!important; color: green; background-color: rgba(0,128,0,0.05);}
+	#quiz_wrapper .col-quiz-full label.feedback__radio_label--correct:hover { border: 3px solid green!important; color: green; background-color: rgba(0,128,0,0.05);}
+	#quiz_wrapper .col-quiz-full label.feedback__radio_label--incorrect { border: 3px solid red !important; color: red !important; background-color: rgba(255,0,0,0.05);}
+	#quiz_wrapper .col-quiz-full label.feedback__radio_label--incorrect:hover { border: 3px solid red !important; color: red; background-color: rgba(255,0,0,0.05);}
+
+	#quiz_wrapper .input div.checkbox > label.feedback__radio_label--correct { border: 3px solid green !important; color: green; background-color: rgba(0,128,0,0.05); }
+	#quiz_wrapper .input div.checkbox > label.feedback__radio_label--incorrect { border: 3px solid red !important; color: red; background-color: rgba(255,0,0,0.05); }
+
+
+	@media only screen and (min-width: 350px) {
+    .feedback__counter-wrapper {font-size: 14px;}
+    .feedback__counter-item--progress-bar { width: 135px;}
+}
+
+@media only screen and (min-width: 576px) {
+    .feedback__counter-wrapper {font-size: 14px; }
+    .feedback__counter-item--progress-bar { width: 145px; }
+}
+
+@media only screen and (min-width: 768px) {
+    .feedback__counter-wrapper {justify-content: flex-end;}
+    .feedback__counter { width: 260px; margin-top: 0; padding: 0; }
+    .feedback__counter-item--progress-bar { width: 120px;}
+}
+
+@media only screen and (min-width: 992px) {
+    .feedback__counter-wrapper {font-size: 16px;}
+    .feedback__counter { width: 290px; }
+}
+
+	/* ---- feedback results ---- */
+	.feedback-result__title, .feedback-result__score { text-align: center; }
+	.feedback-result__title { font-weight: 700;}
+	.feedback-result__score {margin-bottom: 2rem;}
+
+	.feedback-result__cta-wrapper { max-width: 300px; width: 50%; margin: 0 auto; display: flex; flex-direction: column-reverse; justify-content: center; text-align: center; }
+
+	.feedback-result__cta-wrapper .goto_btn, .feedback-result__cta-wrapper .action_retake_btn { margin-left: auto; margin-right: auto; }
+	.feedback-result__cta-wrapper .goto_btn { margin-top: 10px; }
+	.feedback-result__cta-wrapper .goto_btn a { min-width: 166px; margin-top: 0 !important; text-align: center;}
+
+
+
+	/* Customize the label (the container) */
+	.radio_label {
+		display: block;
+		position: relative;
+		padding-left: 25px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 22px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		font-weight: 400;
+	}
+
+	/* Hide the browser's default radio button */
+	.radio_label input {
+		position: absolute;
+		opacity: 0;
+	}
+
+	/* Create a custom radio button */
+	.checkmark {
+		position: absolute;
+		top: 3px;
+		left: 0;
+		height: 12px;
+		width: 12px;
+		background-color: #fff;
+		border: solid 2px #ccc;
+		border-radius: 50%;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.radio_label:hover input ~ .checkmark {
+		background-color: #ccc;
+	}
+
+	/* When the radio button is checked, add a blue background */
+	.radio_label input:checked ~ .checkmark {
+		background-color: #0085c8;
+	}
+
+	.form-has-feedback .radio-single-fb {
+    .radio_label {
+      border: 1px solid #B2B2B2!important;
+      &:hover {
+        border: 1px solid #B2B2B2!important;
+      }
+    }
+  }
+
+	.form-has-feedback .radio-single-fb {
+    .radio_label.feedback-go-green{
+			color: green;
+			border-color: green !important;
+		}
+	}
+}
